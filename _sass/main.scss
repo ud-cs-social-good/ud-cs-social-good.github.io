@@ -218,8 +218,10 @@ hr {
 .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #b93c5a;
 }
-.navbar-custom .navbar-collapse {
+
+.navbar-custom .collapse.navbar-collapse {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
+    text-align: center;
 }
