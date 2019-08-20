@@ -219,9 +219,16 @@ hr {
     color: #b93c5a;
 }
 
-.navbar-custom .collapse.navbar-collapse {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 100%;
-    text-align: center;
+@media (max-width: 990px) {
+    .navbar-collapse {
+        margin-top: 20px;
+        background-color:#2f3273;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align:center;
+        // border-top: 1px solid #2f3273;
+        // border-bottom: 1px solid #2f3273;
+        // box-shadow:inset 0px 0px 0px 10px #f00;
+    }
 }
