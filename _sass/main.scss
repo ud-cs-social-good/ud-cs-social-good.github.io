@@ -198,37 +198,44 @@ hr {
 .col-inside {
     padding: 10px;
 }
-.get-involved-button {
-    background-color: #ff6e82;
-    border: none;
-    // color: #393c87;
-    padding: 0px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 4px;
-    margin-right: 4px;
-    cursor: pointer;
-    border-radius: 60px;
-}
- .get-involved-button  > li > a {
-  	color:#393c87;
-}
+@media (min-width: 990px) {
+    .get-involved-button {
+        background-color: #ff6e82;
+        border: none;
+        padding: 0px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 4px;
+        margin-right: 4px;
+        cursor: pointer;
+        border-radius: 60px;
+    }
+    .get-involved-button  > li > a {
+        color:#393c87;
+    }
 
-.get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #b93c5a;
+    .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        color: #b93c5a;
+    }
+}
+@media (max-width: 990px) {
+    .get-involved-button  > li > a {
+        color:white;
+    }
+    .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #88889c;
+    }
 }
 
 @media (max-width: 990px) {
     .navbar-collapse {
-        margin-top: 20px;
+        margin-top: 25px;
+        padding-top: 20px;
         background-color:#2f3273;
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
         text-align:center;
-        // border-top: 1px solid #2f3273;
-        // border-bottom: 1px solid #2f3273;
-        // box-shadow:inset 0px 0px 0px 10px #f00;
     }
 }
