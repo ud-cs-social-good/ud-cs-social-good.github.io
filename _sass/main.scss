@@ -202,3 +202,23 @@ hr {
 .col-inside {
     padding: 10px;
 }
+.get-involved-button {
+    background-color: #ff6e82;
+    border: none;
+    // color: #393c87;
+    padding: 0px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    border-radius: 60px;
+}
+ .get-involved-button  > li > a {
+  	color:#393c87;
+}
+
+.get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #b93c5a;
+}
