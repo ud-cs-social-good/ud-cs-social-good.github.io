@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #88889c;
+    color: #a69cec;
 }
 
 .navbar-custom .navbar-nav > .active > a {
@@ -198,6 +198,30 @@ hr {
 .col-inside {
     padding: 10px;
 }
+
+.connect-button {
+    background-color: #393c87;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 1px;
+    margin-right: 4px;
+    cursor: pointer;
+    // border-radius: 60px;
+    box-shadow: 4px 4px #252869;
+    // box-shadow: 10px 10px;
+    transform:translate(-4px, -4px);
+}
+.connect-button:hover {
+    color: #a69cec;
+    text-decoration: none;
+    box-shadow: 0px 0px;
+    transform:translate(0px, 0px);
+}
+
 @media (min-width: 990px) {
     .get-involved-button {
         background-color: #ff6e82;
@@ -224,7 +248,7 @@ hr {
         color:white;
     }
     .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #88889c;
+    color: #a69cec;
     }
 }
 

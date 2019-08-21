@@ -6,4 +6,6 @@ header: Get Involved
 
 ---
 ## Connect on Student Central
-[Our Student Central Page](https://studentcentral.udel.edu/organization/cssocialgood)
+{% assign link_text="Join on Student Central" %}
+{% assign link="https://studentcentral.udel.edu/organization/cssocialgood" %}
+{% include connect-button.html %}
