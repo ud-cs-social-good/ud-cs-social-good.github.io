@@ -15,14 +15,20 @@ body {
 .navbar-custom {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     background-color: #393c87;
+    background-color: white;
     padding: 20px;
+    // box-shadow: 0px 3px 3px rgba(0,0,0,0.08);
+    border-bottom: 1px solid #dddddd;
 }
 .navbar-custom .navbar-nav > li > a {
   	color:white;
+    color: #393c87;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #a69cec;
+    color: #929ccd;
+    // color: #a69cec;
+    // color: #393c87;
 }
 
 .navbar-custom .navbar-nav > .active > a {
@@ -60,8 +66,10 @@ body {
     width: 1.25em;
     height: 0.8em;
     margin-right: 0.3em;
-    border-top: 0.2em solid white;
-    border-bottom: 0.2em solid white;
+    // border-top: 0.2em solid white;
+    border-top: 0.2em solid #393c87;
+    // border-bottom: 0.2em solid white;
+    border-bottom: 0.2em solid #393c87;
 }
 
 .hamburger:before {
@@ -70,13 +78,15 @@ body {
     top: 0.1em;
     left: 0px;
     width: 100%;
-    border-top: 0.2em solid white;
+    // border-top: 0.2em solid white;
+    border-top: 0.2em solid #393c87;
 }
 
 .School {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 15px;
     color: white;
+    color: #393c87;
     line-height: 0;
     padding: 1;
     margin: 1;
@@ -85,12 +95,12 @@ body {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 20px;
     color: white;
+    color: #393c87;
     font-weight: bold;
     line-height: 0;
 }
 .header-container {
     font: normal 25px/1.2 'Source Sans Pro', Helvetica, sans-serif;
-    color: white;
     background-color: white;
     color: #ff6e82;
     padding: 40px;
@@ -250,7 +260,8 @@ hr {
         border-radius: 60px;
     }
     .get-involved-button  > li > a {
-        color:#393c87;
+        // color:#393c87;
+        color: white;
     }
 
     .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -259,10 +270,12 @@ hr {
 }
 @media (max-width: 990px) {
     .get-involved-button  > li > a {
-        color:white;
+        // color:white;
+        color: #393c87;
     }
     .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #a69cec;
+    // color: #a69cec;
+    color: #929ccd;
     }
 }
 
@@ -270,7 +283,8 @@ hr {
     .navbar-collapse {
         margin-top: 25px;
         padding-top: 20px;
-        background-color:#2f3273;
+        // background-color:#2f3273;
+        background-color:#f3f3f3;
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
