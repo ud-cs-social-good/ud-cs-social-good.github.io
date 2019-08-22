@@ -156,11 +156,14 @@ body {
 }
 .footer-copyright {
     margin: 10px;
+    color: white;
+    opacity: 0.7;
 }
 .footer-social {
     letter-spacing: 10px;
     font-size: 16px;
     margin: 10px;
+    opacity: 0.7;
 }
 
 .footer-social  a {
@@ -282,14 +285,14 @@ hr {
 .connect-button:hover:after {
     content:'';
     position:absolute;
-    top:-5px; bottom:-5px; 
-    left:-5px; right:-5px; 
+    top:-6px; bottom:-5px; 
+    left:-6px; right:-5px; 
 }
 .connect-button:after {
     content:'';
     position:absolute;
-    top:-5px; bottom:-5px; 
-    left:-5px; right:-5px; 
+    top:-5px; bottom:-6px; 
+    left:-5px; right:-6px; 
 }
 
 @media (min-width: 990px) {
@@ -337,4 +340,12 @@ hr {
         padding-right: 20px;
         text-align:center;
     }
+}
+#cssg-logo-footer {
+    opacity: 0.7;
+    width: 10%;
+    height: 10%;
+    display:block;
+    margin:auto;
+    padding-bottom: 20px;
 }
