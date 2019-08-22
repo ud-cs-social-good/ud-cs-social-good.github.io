@@ -1,4 +1,11 @@
 @import 'bootstrap/bootstrap';
+
+// $purple: $purple;
+$purple: #741ae2;
+$dark-purple: #252869;
+$red: #ff6e82;
+$red: #eb5a64;
+
 /* @import url('https://fonts.googleapis.com/css?family=Source Sans Pro:normal,500,700'); */
 h1 {
     font: bold 40px/1.2 'Source Sans Pro', Helvetica, sans-serif;
@@ -7,7 +14,7 @@ h2 {
     font: bold 32px/1.2 'Source Sans Pro', Helvetica, sans-serif;
 }
 body {
-    // background-color: #393c87;
+    // background-color: $purple;
     background-color: white;
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
@@ -17,7 +24,7 @@ body {
 
 .navbar-custom {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    background-color: #393c87;
+    background-color: $purple;
     background-color: white;
     padding: 20px;
     // box-shadow: 0px 3px 3px rgba(0,0,0,0.08);
@@ -25,13 +32,13 @@ body {
 }
 .navbar-custom .navbar-nav > li > a {
   	color:white;
-    color: #393c87;
+    color: $purple;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #929ccd;
     // color: #a69cec;
-    // color: #393c87;
+    // color: $purple;
 }
 
 .navbar-custom .navbar-nav > .active > a {
@@ -70,9 +77,9 @@ body {
     height: 0.8em;
     margin-right: 0.3em;
     // border-top: 0.2em solid white;
-    border-top: 0.2em solid #393c87;
+    border-top: 0.2em solid $purple;
     // border-bottom: 0.2em solid white;
-    border-bottom: 0.2em solid #393c87;
+    border-bottom: 0.2em solid $purple;
 }
 
 .hamburger:before {
@@ -82,14 +89,14 @@ body {
     left: 0px;
     width: 100%;
     // border-top: 0.2em solid white;
-    border-top: 0.2em solid #393c87;
+    border-top: 0.2em solid $purple;
 }
 
 .School {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 15px;
     color: white;
-    color: #393c87;
+    color: $purple;
     line-height: 0;
     padding: 1;
     margin: 1;
@@ -98,7 +105,7 @@ body {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 20px;
     color: white;
-    color: #393c87;
+    color: $purple;
     font-weight: bold;
     line-height: 0;
 }
@@ -111,21 +118,21 @@ body {
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-attachment: fixed;
-    color: #ff6e82;
+    color: $red;
     color: white;
     display: block;
     // border-bottom: 1px solid #dddddd;
 }
 .header-container h1 {
-    color: #393c87;
+    color: $purple;
     color: white;
 }
 
 .page-footer {
     // border-bottom: 1px solid #dddddd;
     // background-color: white;
-    // background-color:#393c87;
-    // background-color:#ff6e82;
+    // background-color:$purple;
+    // background-color:$red;
     // background-image: url("/assets/background.jpg");
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -211,7 +218,7 @@ body {
 }
 
 .content-container h2 {
-    color: #ff6e82;
+    color: $red;
 }
 hr {
     margin-top: 30px;
@@ -238,7 +245,7 @@ hr {
     }
 }
 .caption-text {
-    color: #ff6e82;
+    color: $red;
 
 }
 .col-inside {
@@ -247,7 +254,7 @@ hr {
 
 .connect-button {
     position:relative; 
-    background-color: #393c87;
+    background-color: $purple;
     color: white;
     padding: 5px 10px;
     text-align: center;
@@ -258,7 +265,7 @@ hr {
     margin-right: 4px;
     cursor: pointer;
     // border-radius: 60px;
-    box-shadow: 4px 4px #252869;
+    box-shadow: 4px 4px $dark-purple;
     // box-shadow: 10px 10px;
     transform:translate(-4px, -4px);
 }
@@ -284,7 +291,7 @@ hr {
 
 @media (min-width: 990px) {
     .get-involved-button {
-        background-color: #ff6e82;
+        background-color: $red;
         border: none;
         padding: 0px 5px;
         text-align: center;
@@ -296,7 +303,7 @@ hr {
         border-radius: 60px;
     }
     .get-involved-button  > li > a {
-        // color:#393c87;
+        // color:$purple;
         color: white;
     }
 
@@ -307,7 +314,7 @@ hr {
 @media (max-width: 990px) {
     .get-involved-button  > li > a {
         // color:white;
-        color: #393c87;
+        color: $purple;
     }
     .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     // color: #a69cec;
