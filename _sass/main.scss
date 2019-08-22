@@ -2,9 +2,18 @@
 
 // $purple: $purple;
 $purple: #741ae2;
-$dark-purple: #252869;
-$red: #ff6e82;
-$red: #eb5a64;
+$navcolor: $purple;
+$navbackground: white;
+$navborder: 1px solid #dddddd;
+// $dark-purple: #252869;
+$dark-purple: #433273;
+$light-purple: #a69cec;
+// $purple: #600aba;
+// $highlightcolor: #ff6e82;
+// $highlightcolor: #6eb4ff;
+// $highlightcolor: #f5c364;
+// $highlightcolor: #fc4bdc;
+$highlightcolor: $purple;
 
 /* @import url('https://fonts.googleapis.com/css?family=Source Sans Pro:normal,500,700'); */
 h1 {
@@ -15,6 +24,7 @@ h2 {
 }
 body {
     // background-color: $purple;
+    padding-top: 80px;
     background-color: white;
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
@@ -24,15 +34,15 @@ body {
 
 .navbar-custom {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    background-color: $purple;
-    background-color: white;
+    // background-color: $purple;
+    background-color: $navbackground;
     padding: 20px;
     // box-shadow: 0px 3px 3px rgba(0,0,0,0.08);
-    border-bottom: 1px solid #dddddd;
+    border-bottom: $navborder;
 }
 .navbar-custom .navbar-nav > li > a {
-  	color:white;
-    color: $purple;
+  	// color:white;
+    color: $navcolor;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -77,9 +87,9 @@ body {
     height: 0.8em;
     margin-right: 0.3em;
     // border-top: 0.2em solid white;
-    border-top: 0.2em solid $purple;
+    border-top: 0.2em solid $navcolor;
     // border-bottom: 0.2em solid white;
-    border-bottom: 0.2em solid $purple;
+    border-bottom: 0.2em solid $navcolor;
 }
 
 .hamburger:before {
@@ -89,14 +99,14 @@ body {
     left: 0px;
     width: 100%;
     // border-top: 0.2em solid white;
-    border-top: 0.2em solid $purple;
+    border-top: 0.2em solid $navcolor;
 }
 
 .School {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 15px;
-    color: white;
-    color: $purple;
+    // color: white;
+    color: $navcolor;
     line-height: 0;
     padding: 1;
     margin: 1;
@@ -104,21 +114,21 @@ body {
 .Club {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-size: 20px;
-    color: white;
-    color: $purple;
+    // color: white;
+    color: $navcolor;
     font-weight: bold;
     line-height: 0;
 }
 .header-container {
     padding: 40px;
-    padding-top: 120px;
+    // padding-top: 120px;
     font: normal 25px/1.2 'Source Sans Pro', Helvetica, sans-serif;
     // background-color: white;
     // background-image: url("/assets/background.jpg");
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-attachment: fixed;
-    color: $red;
+    color: $highlightcolor;
     color: white;
     display: block;
     // border-bottom: 1px solid #dddddd;
@@ -132,7 +142,7 @@ body {
     // border-bottom: 1px solid #dddddd;
     // background-color: white;
     // background-color:$purple;
-    // background-color:$red;
+    // background-color:$highlightcolor;
     // background-image: url("/assets/background.jpg");
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -164,19 +174,12 @@ body {
     flex-wrap: wrap;
     flex: 0 0 463px;
 }
-.first {
+.content-section {
     padding-top: 20px;
     padding-bottom: 20px;
     font-family:'Source Sans Pro', Helvetica, sans-serif;
     // background-color: #f5f5f5;
 }
-.second {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family:'Source Sans Pro', Helvetica, sans-serif;
-    // background-color: #f5f5f5;
-}
-
 
 @media (min-width: 576px) {
     .first {
@@ -218,7 +221,7 @@ body {
 }
 
 .content-container h2 {
-    color: $red;
+    color: $highlightcolor;
 }
 hr {
     margin-top: 30px;
@@ -245,7 +248,7 @@ hr {
     }
 }
 .caption-text {
-    color: $red;
+    color: $highlightcolor;
 
 }
 .col-inside {
@@ -271,7 +274,7 @@ hr {
 }
 .connect-button:hover {
     position:relative; 
-    color: #a69cec;
+    color: $light-purple;
     text-decoration: none;
     box-shadow: 0px 0px;
     transform:translate(0px, 0px);
@@ -291,7 +294,7 @@ hr {
 
 @media (min-width: 990px) {
     .get-involved-button {
-        background-color: $red;
+        background-color: $highlightcolor;
         border: none;
         padding: 0px 5px;
         text-align: center;
@@ -305,10 +308,11 @@ hr {
     .get-involved-button  > li > a {
         // color:$purple;
         color: white;
+        // color: $purple;
     }
 
     .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-        color: #b93c5a;
+        color: $light-purple;
     }
 }
 @media (max-width: 990px) {
@@ -318,7 +322,7 @@ hr {
     }
     .get-involved-button > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     // color: #a69cec;
-    color: #929ccd;
+    color: $dark-purple;
     }
 }
 
