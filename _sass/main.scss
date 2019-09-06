@@ -5,18 +5,12 @@ $purple: #741ae2;
 $navcolor: $purple;
 $navbackground: white;
 $navborder: 1px solid #dddddd;
-// $dark-purple: #252869;
+// $navborderbackground: 1px solid white;
 $dark-purple: #433273;
 $light-purple: #a69cec;
 $pink: #ff5dd6;
-// $purple: #600aba;
-// $highlightcolor: #ff6e82;
-// $highlightcolor: #6eb4ff;
-// $highlightcolor: #f5c364;
-// $highlightcolor: #fc4bdc;
 $highlightcolor: $purple;
 
-/* @import url('https://fonts.googleapis.com/css?family=Source Sans Pro:normal,500,700'); */
 h1 {
     font: bold 40px/1.2 'Source Sans Pro', Helvetica, sans-serif;
 }
@@ -24,9 +18,6 @@ h2 {
     font: bold 32px/1.2 'Source Sans Pro', Helvetica, sans-serif;
 }
 body {
-    // background-color: $purple;
-    // padding-top: 80px;
-    // padding-top: 110px;
     background-color: $purple;
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
@@ -36,7 +27,7 @@ body {
 
 @media (max-width: 576px) {
     body {
-        background-image:none;
+        background-image:url("/assets/mobile_background.jpg");
         background-color: $purple;
     }
 }
@@ -50,15 +41,17 @@ body {
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     // background-color: $purple;
     background-color: $navbackground;
-    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     // box-shadow: 0px 3px 3px rgba(0,0,0,0.08);
-    border-top: $navborder;
+    // border-top: $navborderbackground;
     border-bottom: $navborder;
     // box-shadow-bottom: 0px 0px 9px rgba(0,0,0,0.25);
 }
 .navbar-custom .navbar-nav > li > a {
   	// color:white;
     color: $navcolor;
+    // padding: 20px;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -118,23 +111,6 @@ body {
     border-top: 0.2em solid $navcolor;
 }
 
-.School {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    font-size: 15px;
-    // color: white;
-    color: $navcolor;
-    line-height: 0;
-    padding: 1;
-    margin: 1;
-}
-.Club {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    font-size: 20px;
-    // color: white;
-    color: $navcolor;
-    font-weight: bold;
-    line-height: 0;
-}
 .header-container {
     padding: 40px;
     // padding-top: 120px;
@@ -321,7 +297,7 @@ hr {
         text-decoration: none;
         display: inline-block;
         margin-left: 4px;
-        margin-right: 4px;
+        // margin-right: 4px;
         cursor: pointer;
         border-radius: 60px;
     }
@@ -378,7 +354,13 @@ hr {
     display:block;
     width: 100%;
     // height:  30px;
-    // border-bottom: $navborder;
-    padding:7px;
-    padding-right:24px;
+    border-bottom: $navborder;
+    // padding:7px;
+    padding:15px;
+    // padding-right:24px;
+    // padding-left:24px;
+}
+#cssg-logo-nav {
+    height: 40px;
+    // padding-left: 4px;
 }
