@@ -1,43 +1,17 @@
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-<!-- <link rel="icon" --> 
-<!--       type="image/png" --> 
-<!--       href="{{ "/assets/fancy_cssg_logo.svg" | relative_url }}"> -->
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Font -->
-    <link href='http://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet' type='text/css'>
-
-
-    <title>{{ page.title }}</title>
-    <!-- Style Sheet -->
-    <link href="{{ "/assets/css/styles.css" | relative_url }}" rel="stylesheet">
-  </head>
+  {% include head.html %}
   <body>
     <!-- Display Math -->
     <script type="text/x-mathjax-config"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <div class="heading">
-			<!-- <p style="font-size: 15px;text-align:left;"> -->
-			<!-- 	<br>University of Delaware<br><b>CS + Social Good</b> -->
-			<!-- <span style="float:right;"> -->
       <div class="row">
         <div class="col text-left">
           University of Delaware<br><b>CS + Social Good</b>
         </div>
         <div class="col align-bottom text-right">Fall Meeting Times: Thursdays from 7:00-8:00pm</div>
       </div>
-      <!-- </span> -->
-      <!-- </p> -->
     </div>
     {% include navigation.html %}
 
@@ -46,11 +20,10 @@
       {{ page.subheader }}
     </div>
 
-    <!-- <div class="container"> -->
     {{ content }}
-    <!-- </div> -->
 
     {% include footer.html %}
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
