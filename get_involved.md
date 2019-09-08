@@ -5,18 +5,23 @@ title: Get Involved
 header: Get Involved
 
 ---
-## Connect on Student Central
-{% assign link_text="Join on Student Central" %}
-{% assign link="https://studentcentral.udel.edu/organization/cssocialgood" %}
+## Email List
+{% assign link_text="Subcribe to our Email List" %}
+{% assign link="https://udel.us20.list-manage.com/subscribe?u=73aec7e123b6cb0e85ddbaf98&id=967e82d901" %}
 {% include connect-button.html %}
 <hr>
 ## Join us at one of our Weekly Meetings
 **Time:** Thursdays from 7:00-8:00pm<br>
-**Location:** TBA
+**Location:** Evans iSuite Lounge
 <hr>
 ## Join us at one of our Upcoming Events
 {% assign link_text="View Upcoming Events" %}
 {% assign link="/upcoming_events.html" | relative_url %}
+{% include connect-button.html %}
+<hr>
+## Connect on Student Central
+{% assign link_text="Join on Student Central" %}
+{% assign link="https://studentcentral.udel.edu/organization/cssocialgood" %}
 {% include connect-button.html %}
 <hr>
 ## Email
