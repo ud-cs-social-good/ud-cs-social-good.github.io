@@ -12,7 +12,7 @@ header: Get Involved
 <hr>
 ## Join us at one of our Weekly Meetings
 **Time:** Thursdays from 7:00-8:00pm<br>
-**Location:** Evans iSuite Lounge
+**Location:** 206 Alison West
 <hr>
 ## Join us at one of our Upcoming Events
 {% assign link_text="View Upcoming Events" %}
