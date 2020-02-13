@@ -11,7 +11,7 @@ header: Get Involved
 {% include connect-button.html %}
 <hr>
 ## Join us at one of our Weekly Meetings
-**Time:** Thursdays from 7:00-8:00pm<br>
+**Time:** Tuesdays from 7:00-8:00pm<br>
 **Location:** 206 Alison West
 <hr>
 ## Join us at one of our Upcoming Events
