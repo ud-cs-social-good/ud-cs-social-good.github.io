@@ -13,7 +13,7 @@ social change
 ## Our Goals
 * Connect students with technical projects that help promote social
   good
-* Discuss and address topic relating to technological ethics
+* Discuss and address topics relating to technological ethics
 * Help educated K-12 student on basic programing concepts
 
 * * *
