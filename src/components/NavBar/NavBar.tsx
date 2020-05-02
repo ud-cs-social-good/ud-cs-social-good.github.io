@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './NavBar.scss'
-import logo from 'assets/cssg_logo_purple.svg';
+import logo from 'assets/images/cssg_logo_purple.svg';
 
 function NavLink(props: any): JSX.Element {
   let img: JSX.Element | null = null;
