@@ -3,23 +3,16 @@ import './NavBar.scss'
 import logo from 'assets/images/cssg_logo_purple.svg';
 
 function NavLink(props: any): JSX.Element {
-  let img: JSX.Element | null = null;
-  if (props.img) {
-    img = (
-      <img className="navimage" src={props.img.src} alt={props.img.alt}/>
-    );
-  }
   return (
     <button className="navlink">
-      {img}
-      {props.name}
+      {props.children}
     </button>
   )
 }
 
 function NavList(props: any): JSX.Element {
   let links: [JSX.Element] = (props.links).map((link: any) => (
-    <li><NavLink name={link.name}/></li>
+    <li><NavLink>{link.name}</NavLink></li>
   ));
   return (
     <ul className="navlist">{links}</ul>
@@ -28,7 +21,6 @@ function NavList(props: any): JSX.Element {
 
 export class NavBar extends Component {
   render(): JSX.Element {
-    let logo_obj  = {src: logo, alt: "CS + Social Good Logo"};
     let links = [
       {name: "Home"},
       {name: "Events"},
@@ -38,8 +30,10 @@ export class NavBar extends Component {
     return (
       <nav>
         <div className="navcontents">
-        <NavLink img={logo_obj}/>
-        <NavList links={links}/>
+          <NavLink>
+            <img className="navimage" src={logo} alt="CS + Social Good Logo"/>
+          </NavLink>
+          <NavList links={links}/>
         </div>
       </nav>
     );
