@@ -12,7 +12,7 @@ function NavLink(props: any): JSX.Element {
 
 function NavList(props: any): JSX.Element {
   let links: [JSX.Element] = (props.links).map((link: any) => (
-    <li><NavLink>{link.name}</NavLink></li>
+    <li key={link.name}><NavLink>{link.name}</NavLink></li>
   ));
   return (
     <ul className="navlist">{links}</ul>
