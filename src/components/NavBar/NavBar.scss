@@ -1,5 +1,4 @@
 @import 'base.scss';
-$navheight : 3.5rem;
 
 nav {
   background-color: $bg;
@@ -28,6 +27,8 @@ nav {
   padding-right:0.5rem;
   font-weight:600;
   cursor:pointer;
+}
+.navlink a {
   text-decoration:none;
   color: $primary;
 }
