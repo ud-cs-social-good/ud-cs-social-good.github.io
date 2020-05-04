@@ -3,6 +3,25 @@ import './NavBar.scss'
 import { Link } from 'react-router-dom';
 import logo from 'assets/images/cssg_logo_purple.svg';
 
+type NavProps = {
+  links: {name:string, route:string}[],
+}
+
+export class NavBar extends Component<NavProps> {
+  render(): JSX.Element {
+    return (
+      <nav>
+        <div className='navcontents'>
+          <NavLink route='/'>
+            <img className='navimage' src={logo} alt='CS + Social Good Logo'/>
+          </NavLink>
+          <NavList links={this.props.links}/>
+        </div>
+      </nav>
+    );
+  }
+}
+
 function NavLink(props: any): JSX.Element {
   return (
     <button className='navlink'>
@@ -22,24 +41,4 @@ function NavList(props: any): JSX.Element {
   return (
     <ul className='navlist'>{links}</ul>
   );
-}
-
-export class NavBar extends Component {
-  render(): JSX.Element {
-    let links = [
-      {name: 'Events', route: '/about'},
-      {name: 'Team', route: '/'},
-      {name: 'Volunteering', route: '/'},
-    ];
-    return (
-      <nav>
-        <div className='navcontents'>
-          <NavLink route='/'>
-            <img className='navimage' src={logo} alt='CS + Social Good Logo'/>
-          </NavLink>
-          <NavList links={links}/>
-        </div>
-      </nav>
-    );
-  }
 }
