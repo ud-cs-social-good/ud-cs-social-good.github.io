@@ -1,26 +1,25 @@
-import React, { Component } from 'react';
+import React  from 'react';
 import './NavBar.scss'
 import { Link } from 'react-router-dom';
-import logo from 'assets/images/cssg_logo_purple.svg';
+import Logo from 'assets/images/cssg_logo_purple.svg';
 
 type NavProps = {
   links: {name:string, route:string}[],
 }
 
-export class NavBar extends Component<NavProps> {
-  render(): JSX.Element {
-    return (
-      <nav>
-        <div className='navcontents'>
-          <NavLink route='/'>
-            <img className='navimage' src={logo} alt='CS + Social Good Logo'/>
-          </NavLink>
-          <NavList links={this.props.links}/>
-        </div>
-      </nav>
-    );
-  }
+export function NavBar(props: NavProps): JSX.Element {
+  return (
+    <nav>
+      <div className='navcontents'>
+        <NavLink route='/'>
+          <img className='navimage' src={Logo} alt='CS + Social Good Logo'/>
+        </NavLink>
+        <NavList links={props.links}/>
+      </div>
+    </nav>
+  );
 }
+
 
 function NavLink(props: any): JSX.Element {
   return (
