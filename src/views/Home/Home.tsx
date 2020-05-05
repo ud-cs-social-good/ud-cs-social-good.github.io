@@ -1,6 +1,6 @@
 import React  from 'react';
 import './Home.scss';
-import { Card } from 'components';
+import { SplitCard, Card } from 'components';
 import MeetingsImg from 'assets/images/meeting.jpg';
 
 export function Home(): JSX.Element {
@@ -9,7 +9,14 @@ export function Home(): JSX.Element {
       <h1>University of Delaware CS + Social Good</h1>
 
       <div className="Cards">
-        <Card
+        <Card>
+          <div>
+            <h2>Header Header Header</h2>
+            Cool this is awesome. Text text text.
+          </div>
+        </Card>
+
+        <SplitCard
           left={
             <img src={MeetingsImg} alt='CS + Social Good Logo'/>
           }
