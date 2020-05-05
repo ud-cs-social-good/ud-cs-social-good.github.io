@@ -1,0 +1,60 @@
+@import 'base.scss';
+
+.Card {
+  margin-top:1rem;
+  margin-bottom:1rem;
+  background-color: $bg;
+  width: 60rem;
+  display:flex;
+  min-height: 25rem;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: $primary;
+  }
+  
+  .Left {
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .Right {
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .Card {
+    flex-flow:column;
+    width:30rem;
+    .Left {
+      width: 100%;
+    }
+    .Right {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Card {
+    flex-flow:column;
+    width:100%;
+    .Left {
+      width: 100%;
+    }
+    .Right {
+      width: 100%;
+    }
+  }
+}
