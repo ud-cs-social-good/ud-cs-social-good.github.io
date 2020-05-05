@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
+import React  from 'react';
 import './Card.scss'
 
 type CardProps = {
-  children: ReactNode
+  children: JSX.Element
 }
 
 type SplitCardProps = {
