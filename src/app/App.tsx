@@ -5,9 +5,9 @@ import { NavBar } from 'components';
 import { Home } from 'views';
 
 const links = [
-  {name: 'Events', route: '/about'},
-  {name: 'Team', route: '/'},
-  {name: 'Volunteering', route: '/'},
+  {name: 'Events', route: '/todo'},
+  {name: 'Team', route: '/todo'},
+  {name: 'Volunteering', route: '/todo'},
 ];
 
 export default function App(): JSX.Element {
