@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
-import './Home.scss'
+import './Home.scss';
+import { Card } from 'components';
+import MeetingsImg from 'assets/images/meeting.jpg';
 
 export class Home extends Component {
   render(): JSX.Element {
     return (
-      <h1>Home</h1>
+      <div className="Home">
+        <h1>University of Delaware CS + Social Good</h1>
+
+        <div className="Cards">
+          <Card
+            left={
+              <img src={MeetingsImg} alt='CS + Social Good Logo'/>
+            }
+            right={
+              <div>
+                <h2>General Body Meetings</h2>
+                Our next general body meetings will be at 7:00pm on Tuesday,
+                March 10th in the Evans iSuite 
+              </div>
+            }
+          />
+        </div>
+
+      </div>
     );
   }
 }

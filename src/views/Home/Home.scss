@@ -1,0 +1,11 @@
+@import 'base.scss';
+.Home {
+  width: 100%;
+
+  .Cards {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
