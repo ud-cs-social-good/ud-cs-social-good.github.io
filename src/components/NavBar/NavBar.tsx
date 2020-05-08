@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import './NavBar.scss'
 import { Link } from 'react-router-dom';
 import Logo from 'assets/images/cssg_logo_purple.svg';
@@ -33,6 +33,12 @@ export function NavBar(props: NavProps): JSX.Element {
   if  (props.windowSize.width > 800) {
     mobile = false;
   }
+
+  useEffect(() => {
+    if  (props.windowSize.width > 800) {
+      setToggled(false);
+    }
+  }, [props.windowSize.width]);
 
   return (
     <nav>
