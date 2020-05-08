@@ -1,8 +1,9 @@
-import React from 'react';
+import React  from 'react';
 import './App.scss';
 import { BrowserRouter, Route } from "react-router-dom";
 import { NavBar } from 'components';
 import { Home } from 'views';
+import { useWindowSize } from 'hooks';
 
 const links = [
   {name: 'Events', route: '/todo'},
@@ -11,14 +12,18 @@ const links = [
 ];
 
 export default function App(): JSX.Element {
+  let windowSize = useWindowSize();
 
   return (
       <div className="App">
         <BrowserRouter>
-          <NavBar links={links}/>
-            <Route exact path="/" component={Home}/>
+          <NavBar
+            windowSize={windowSize}
+            links={links}
+          />
+          <Route exact path="/" component={Home}/>
         </BrowserRouter>
       </div>
   );
-}
 
+}
