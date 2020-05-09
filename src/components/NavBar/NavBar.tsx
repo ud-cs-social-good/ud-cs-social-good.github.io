@@ -97,6 +97,7 @@ function NavToggler(props: NavTogglerProps): JSX.Element {
           </svg>
         </button>
   );
+
   if (!props.mobile) {
     return (
       <div className="navtoggler-container">
