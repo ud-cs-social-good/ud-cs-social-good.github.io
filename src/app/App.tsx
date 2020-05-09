@@ -6,6 +6,7 @@ import { Home } from 'views';
 import { useWindowSize } from 'hooks';
 
 const links = [
+  {name: 'About', route: '/todo'},
   {name: 'Events', route: '/todo'},
   {name: 'Team', route: '/todo'},
   {name: 'Volunteering', route: '/todo'},
