@@ -12,9 +12,29 @@
   justify-content: center;
 
   h2 {
+    margin-top:0;
+    padding-top:0;
     color: $primary;
   }
+
+  ul {
+    padding-left:1rem;
+  }
   
+  .Dense {
+    box-sizing: border-box;
+    padding: 1.5rem;
+    height: 100%;
+    width: 100%;
+    align-self:flex-start;
+  }
+
+  .Centered {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1.5rem;
+  }
+
   .Left {
     box-sizing: border-box;
     display:flex;
@@ -53,8 +73,11 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .Split {
+    flex-flow: column;
+  }
   .Card {
-    flex-flow:column;
+    border-radius: 0;
     width:100%;
     .Left {
       width: 100%;

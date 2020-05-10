@@ -10,17 +10,30 @@ type SplitCardProps = {
   right: JSX.Element
 }
 
-export function Card(props: CardProps): JSX.Element {
+
+export function CenteredCard(props: CardProps): JSX.Element {
   return (
     <div className="Card">
-      {props.children}
+      <div className="Centered">
+        {props.children}
+      </div>
+    </div>
+  )
+}
+
+export function DenseCard(props: CardProps): JSX.Element {
+  return (
+    <div className="Card">
+      <div className="Dense">
+        {props.children}
+      </div>
     </div>
   )
 }
 
 export function SplitCard(props: SplitCardProps): JSX.Element {
   return (
-    <div className="Card">
+    <div className="Card Split">
       <div className="Left">
         {props.left}
       </div>

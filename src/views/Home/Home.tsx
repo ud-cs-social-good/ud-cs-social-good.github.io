@@ -1,20 +1,20 @@
 import React  from 'react';
 import './Home.scss';
-import { SplitCard, Card } from 'components';
+import { SplitCard, CenteredCard } from 'components';
 import MeetingsImg from 'assets/images/meeting.jpg';
 
 export function Home(): JSX.Element {
   return (
-    <div className="Home">
+    <div className="View">
       <h1>University of Delaware CS + Social Good</h1>
 
       <div className="Cards">
-        <Card>
+        <CenteredCard>
           <div>
             <h2>Header Header Header</h2>
-            Cool this is awesome. Text text text.
+            <p>Cool this is awesome. Text text text.</p>
           </div>
-        </Card>
+        </CenteredCard>
 
         <SplitCard
           left={
@@ -29,7 +29,6 @@ export function Home(): JSX.Element {
           }
         />
       </div>
-
     </div>
   );
 }

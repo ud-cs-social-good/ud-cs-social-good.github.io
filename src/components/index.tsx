@@ -1,2 +1,2 @@
 export { NavBar } from './NavBar/NavBar';
-export { Card, SplitCard } from './Card/Card';
+export { DenseCard, CenteredCard, SplitCard } from './Card/Card';
