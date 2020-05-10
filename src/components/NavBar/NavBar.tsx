@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 import './NavBar.scss'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from 'assets/images/cssg_logo_purple.svg';
 
 type NavProps = {
@@ -28,6 +28,7 @@ type NavTogglerProps = {
 
 export function NavBar(props: NavProps): JSX.Element {
   let [toggled, setToggled] = useState(false);
+  let location = useLocation();
 
   let mobile = true;
   if  (props.windowSize.width > 800) {
@@ -39,6 +40,10 @@ export function NavBar(props: NavProps): JSX.Element {
       setToggled(false);
     }
   }, [props.windowSize.width]);
+
+  useEffect(() => {
+    setToggled(false);
+  }, [location]);
 
   return (
     <nav>

@@ -20,7 +20,7 @@ export default function App(): JSX.Element {
   });
 
   let routes = route_links.map((item) => (
-      <Route exact path={item.route} component={item.component}/>
+      <Route key={item.name} exact path={item.route} component={item.component}/>
   ));
 
   return (
