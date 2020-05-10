@@ -1,7 +1,7 @@
 @import 'base.scss';
 
 .Card {
-  border-radius: 0.25rem;
+  border-radius: 0.40rem;
   margin-top:1rem;
   margin-bottom:1rem;
   background-color: $bg;
@@ -57,6 +57,7 @@
 
 .Card img {
   width: 100%;
+  border-radius: 0.40rem;
 }
 
 @media only screen and (max-width: 1000px) {
