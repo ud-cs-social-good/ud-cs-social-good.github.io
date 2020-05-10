@@ -1,0 +1,16 @@
+@import 'base.scss';
+
+.Button {
+  border-radius: $radius;
+  padding: 0.5rem;
+  color: $bg;
+  cursor: pointer;
+  background-color: $primary;
+}
+
+.Button:active {
+  background-color: $active-primary;
+}
+.Button:hover {
+  background-color: $hover-primary;
+}

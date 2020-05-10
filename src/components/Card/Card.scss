@@ -1,7 +1,7 @@
 @import 'base.scss';
 
 .Card {
-  border-radius: 0.40rem;
+  border-radius: $radius;
   margin-top:1rem;
   margin-bottom:1rem;
   background-color: $bg;
@@ -22,7 +22,7 @@
   }
   
   .Dense {
-    box-sizing: border-box;
+    box-sizing: $radius;
     padding: 1.5rem;
     height: 100%;
     width: 100%;

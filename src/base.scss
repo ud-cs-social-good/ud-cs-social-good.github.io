@@ -4,6 +4,11 @@ $bg : #ffffff;
 $fg : #000000;
 $hover: rgba(0,0,0, 0.04);
 $active: rgba(0,0,0, 0.065);
+$outline: rgba(0,0,0, 0.125);
+$hover-primary: #5C0AC5;
+$active-primary: #4C08A3;
+
+$radius: 0.40rem;
 
 @font-face {
     font-family: 'Source Sans Pro';
