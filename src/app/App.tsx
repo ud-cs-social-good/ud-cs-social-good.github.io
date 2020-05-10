@@ -2,14 +2,21 @@ import React  from 'react';
 import './App.scss';
 import { BrowserRouter, Route } from "react-router-dom";
 import { NavBar } from 'components';
-import { Home, About } from 'views';
+import {
+  Home,
+  About,
+  Volunteering,
+  Team,
+  Events,
+} from 'views';
 import { useWindowSize } from 'hooks';
 
 const route_links = [
+  {name: 'Home', route: '/', component: Home},
   {name: 'About', route: '/about', component: About},
-  {name: 'Events', route: '/events', component: Home},
-  {name: 'Team', route: '/team', component: Home},
-  {name: 'Volunteering', route: '/volunteering', component: Home},
+  {name: 'Events', route: '/events', component: Events},
+  {name: 'Team', route: '/team', component: Team},
+  {name: 'Volunteering', route: '/volunteering', component: Volunteering},
 ];
 
 export default function App(): JSX.Element {
@@ -28,9 +35,8 @@ export default function App(): JSX.Element {
         <BrowserRouter>
           <NavBar
             windowSize={windowSize}
-            links={links}
+            links={links.slice(1)}
           />
-          <Route exact path="/" component={Home}/>
           {routes}
         </BrowserRouter>
       </div>
