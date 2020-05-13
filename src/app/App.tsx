@@ -25,7 +25,7 @@ export default function App(): JSX.Element {
   let navlinks = route_links.filter((item) => {
     // Don't want to display 'Home' on the navbar so filter it out
     // of navlinks
-    return item.name != 'Home';
+    return item.name !== 'Home';
   }).map((item) => {
     return {name: item.name, route: item.route};
   });
