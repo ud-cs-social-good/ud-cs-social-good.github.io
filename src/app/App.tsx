@@ -22,8 +22,12 @@ const route_links = [
 export default function App(): JSX.Element {
   let windowSize = useWindowSize();
 
-  let links = route_links.map((item) => {
-    return {name: item.name, route: item.route}
+  let navlinks = route_links.filter((item) => {
+    // Don't want to display 'Home' on the navbar so filter it out
+    // of navlinks
+    return item.name != 'Home';
+  }).map((item) => {
+    return {name: item.name, route: item.route};
   });
 
   let routes = route_links.map((item) => (
@@ -35,7 +39,7 @@ export default function App(): JSX.Element {
         <BrowserRouter>
           <NavBar
             windowSize={windowSize}
-            links={links.slice(1)}
+            links={navlinks}
           />
           {routes}
         </BrowserRouter>
