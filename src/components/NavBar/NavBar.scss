@@ -16,58 +16,58 @@ nav {
     justify-content: space-between;
     align-items:flex-start;
   }
-}
-.navlink {
-  cursor:pointer;
-  height: $navheight;
-  display:flex;
-  align-items:center;
-  padding-left:0.5rem;
-  padding-right:0.5rem;
-  font-weight:600;
-  cursor:pointer;
-  text-decoration:none;
-  color: $primary;
-}
+  .navlink {
+    cursor:pointer;
+    height: $navheight;
+    display:flex;
+    align-items:center;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    font-weight:600;
+    cursor:pointer;
+    text-decoration:none;
+    color: $primary;
+  }
 
-nav a {
-  text-decoration:none;
-}
+  a {
+    text-decoration:none;
+  }
 
-.navlink:hover {
-  background-color: $hover;
-}
+  .navlink:hover {
+    background-color: $hover;
+  }
 
-.navlink:active {
-  background-color: $active;
-}
+  .navlink:active {
+    background-color: $active;
+  }
 
-.navimage {
-  height: 2.5rem;
-}
+  .navimage {
+    height: 2.5rem;
+  }
 
-.navlist {
-  margin:0;
-  padding:0;
-  list-style-type: none;
-  display:flex;
-  align-items:flex-end;
-}
+  .navlist {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    display:flex;
+    align-items:flex-end;
+  }
 
-.column {
-  flex-direction:column;
-}
+  .column {
+    flex-direction:column;
+  }
 
-.row {
-  flex-direction:row;
-}
+  .row {
+    flex-direction:row;
+  }
 
-.navtoggler-container {
-  display:flex;
-  flex-direction:column;
-  align-items:flex-end;
-}
+  .navtoggler-container {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+  }
 
-.navtoggler-button {
-  display:block;
+  .navtoggler-button {
+    display:block;
+  }
 }

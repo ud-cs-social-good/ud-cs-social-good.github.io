@@ -74,9 +74,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .Split {
-    flex-flow: column;
-  }
   .Card {
     border-radius: 0;
     width:100%;
@@ -85,6 +82,9 @@
     }
     .Right {
       width: 100%;
+    }
+    .Split {
+      flex-flow: column;
     }
   }
 }
