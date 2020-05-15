@@ -22,7 +22,7 @@
   }
   
   .Dense {
-    box-sizing: $radius;
+    box-sizing: border-box;
     padding: 1.5rem;
     height: 100%;
     width: 100%;
