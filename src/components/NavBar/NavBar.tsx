@@ -1,19 +1,19 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavBar.scss'
 import { Link, useLocation } from 'react-router-dom';
 import Logo from 'assets/images/cssg_logo_purple.svg';
 
 type NavProps = {
-  links: {name:string, route:string}[],
-  windowSize: {width: number, height: number},
+  links: { name: string, route: string }[],
+  windowSize: { width: number, height: number },
 }
 
-type  NavListProps = {
-  links: {name:string, route:string}[],
+type NavListProps = {
+  links: { name: string, route: string }[],
   mobile: boolean,
 }
 
-type  NavLinkProps = {
+type NavLinkProps = {
   route: string,
   children: JSX.Element,
 }
@@ -22,7 +22,7 @@ type NavTogglerProps = {
   mobile: boolean,
   toggled: boolean,
   toggle: () => void,
-  children: JSX.Element,
+    children: JSX.Element,
 }
 
 
@@ -31,12 +31,12 @@ export function NavBar(props: NavProps): JSX.Element {
   let location = useLocation();
 
   let mobile = true;
-  if  (props.windowSize.width > 800) {
+  if (props.windowSize.width > 800) {
     mobile = false;
   }
 
   useEffect(() => {
-    if  (props.windowSize.width > 800) {
+    if (props.windowSize.width > 800) {
       setToggled(false);
     }
   }, [props.windowSize.width]);
@@ -49,14 +49,14 @@ export function NavBar(props: NavProps): JSX.Element {
     <nav>
       <div className='navcontents'>
         <NavLink route='/'>
-          <img className='navimage' src={Logo} alt='CS + Social Good Logo'/>
+          <img className='navimage' src={Logo} alt='CS + Social Good Logo' />
         </NavLink>
         <NavToggler
           mobile={mobile}
-          toggle={()=>{setToggled(!toggled)}}
+          toggle={() => { setToggled(!toggled) }}
           toggled={toggled}
         >
-          <NavList mobile={mobile} links={props.links}/>
+          <NavList mobile={mobile} links={props.links} />
         </NavToggler>
       </div>
     </nav>
@@ -90,38 +90,33 @@ function NavList(props: NavListProps): JSX.Element {
 
 function NavToggler(props: NavTogglerProps): JSX.Element {
   let button: JSX.Element = (
-        <button
-          onClick={props.toggle} 
-          aria-label="menu"
-          className="navtoggler-button navlink"
-        >
-          <svg viewBox="0 0 100 80" width="20" height="20">
-            <rect width="100" height="15"></rect>
-            <rect y="30" width="100" height="15"></rect>
-            <rect y="60" width="100" height="15"></rect>
-          </svg>
-        </button>
+    <button
+      key="button"
+      onClick={props.toggle}
+      aria-label="menu"
+      className="navtoggler-button navlink"
+    >
+      <svg viewBox="0 0 100 80" width="20" height="20">
+        <rect width="100" height="15"></rect>
+        <rect y="30" width="100" height="15"></rect>
+        <rect y="60" width="100" height="15"></rect>
+      </svg>
+    </button>
   );
 
-  if (!props.mobile) {
-    return (
-      <div className="navtoggler-container">
-        {props.children}
-      </div>
-    )
+  let contents = [];
+
+  if (props.mobile) {
+    contents.push(button)
   }
-  if (props.toggled) {
-    return (
-      <div className="navtoggler-container">
-        {button}
-        {props.children}
-      </div>
-    );
-  } else {
-    return (
-      <div className="navtoggler-container">
-        {button}
-      </div>
-    );
+
+  if (!props.mobile || props.toggled) {
+    contents.push(props.children)
   }
+
+  return (
+    <div className="navtoggler-container">
+      {contents}
+    </div>
+  );
 }
