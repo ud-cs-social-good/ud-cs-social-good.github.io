@@ -1,7 +1,10 @@
 import React  from 'react';
 import './App.scss';
 import { BrowserRouter, Route } from "react-router-dom";
-import { NavBar } from 'components';
+import {
+  NavBar,
+  HeaderBanner
+} from 'components';
 import {
   Home,
   About,
@@ -37,6 +40,11 @@ export default function App(): JSX.Element {
   return (
       <div className="App">
         <BrowserRouter>
+          <HeaderBanner>
+            <div>
+              Meeting will resume in the 2020 fall semester
+            </div>
+          </HeaderBanner>
           <NavBar
             windowSize={windowSize}
             links={navlinks}
