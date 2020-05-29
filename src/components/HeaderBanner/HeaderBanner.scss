@@ -1,0 +1,16 @@
+@import 'base.scss';
+
+.HeaderBanner {
+  background-color: $bg;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  color: $primary;
+  padding:0.5rem;
+  display:flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+
+  .HeaderName {
+    font-weight: 600;
+  }
+
+}
