@@ -25,11 +25,11 @@ const route_links = [
 export default function App(): JSX.Element {
   let windowSize = useWindowSize();
 
-  let navlinks = route_links.filter((item) => {
+  let navlinks = route_links.filter((item) => 
     // Don't want to display 'Home' on the navbar so filter it out
     // of navlinks
-    return item.name !== 'Home';
-  }).map((item) => {
+    item.name !== 'Home'
+  ).map((item) => {
     return {name: item.name, route: item.route};
   });
 
@@ -42,7 +42,7 @@ export default function App(): JSX.Element {
         <BrowserRouter>
           <HeaderBanner>
             <div>
-              Meeting will resume in the 2020 fall semester
+              Meetings will resume in the 2020 fall semester
             </div>
           </HeaderBanner>
           <NavBar
