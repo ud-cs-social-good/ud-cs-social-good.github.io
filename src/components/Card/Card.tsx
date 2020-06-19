@@ -1,5 +1,5 @@
 import React  from 'react';
-import './Card.scss'
+import './Card.scss';
 
 type CardProps = {
   children: JSX.Element
@@ -9,7 +9,6 @@ type SplitCardProps = {
   left: JSX.Element,
   right: JSX.Element
 }
-
 
 export function CenteredCard(props: CardProps): JSX.Element {
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './NavBar.scss'
+import './NavBar.scss';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from 'assets/images/cssg_logo_purple.svg';
 
@@ -25,15 +25,10 @@ type NavTogglerProps = {
     children: JSX.Element,
 }
 
-
 export function NavBar(props: NavProps): JSX.Element {
   let [toggled, setToggled] = useState(false);
   let location = useLocation();
-
-  let mobile = true;
-  if (props.windowSize.width > 800) {
-    mobile = false;
-  }
+  let mobile = props.windowSize.width > 800 ? false : true;
 
   useEffect(() => {
     if (props.windowSize.width > 800) {
@@ -63,7 +58,6 @@ export function NavBar(props: NavProps): JSX.Element {
   );
 }
 
-
 function NavLink(props: NavLinkProps): JSX.Element {
   return (
     <Link to={props.route}>
@@ -89,7 +83,7 @@ function NavList(props: NavListProps): JSX.Element {
 }
 
 function NavToggler(props: NavTogglerProps): JSX.Element {
-  let button: JSX.Element = (
+  let hamburger_button: JSX.Element = (
     <button
       key="button"
       onClick={props.toggle}
@@ -107,7 +101,7 @@ function NavToggler(props: NavTogglerProps): JSX.Element {
   let contents = [];
 
   if (props.mobile) {
-    contents.push(button)
+    contents.push(hamburger_button)
   }
 
   if (!props.mobile || props.toggled) {
