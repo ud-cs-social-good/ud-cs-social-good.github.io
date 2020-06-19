@@ -21,7 +21,7 @@ const nav_routes = [
   {name: 'Volunteering', route: '/volunteering', component: Volunteering},
 ];
 
-const other_routes = {name: 'Home', route: '/', component: Home};
+const other_routes = [ {name: 'Home', route: '/', component: Home} ];
 
 export default function App(): JSX.Element {
   let windowSize = useWindowSize();
