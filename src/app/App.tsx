@@ -14,19 +14,19 @@ import {
 } from 'views';
 import { useWindowSize } from 'hooks';
 
-const home_link = {name: 'Home', route: '/', component: Home};
-
-const links = [
+const nav_routes = [
   {name: 'About', route: '/about', component: About},
   {name: 'Events', route: '/events', component: Events},
   {name: 'Team', route: '/team', component: Team},
   {name: 'Volunteering', route: '/volunteering', component: Volunteering},
 ];
 
+const other_routes = {name: 'Home', route: '/', component: Home};
+
 export default function App(): JSX.Element {
   let windowSize = useWindowSize();
 
-  let routes = links.concat([home_link]).map((item) => (
+  let routes = nav_routes.concat(other_routes).map((item) => (
     <Route
       key={item.name}
       exact
@@ -45,7 +45,7 @@ export default function App(): JSX.Element {
         </HeaderBanner>
         <NavBar
           windowSize={windowSize}
-          links={links}
+          links={nav_routes}
         />
         {routes}
       </BrowserRouter>
