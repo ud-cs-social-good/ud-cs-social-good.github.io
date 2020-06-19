@@ -34,24 +34,29 @@ export default function App(): JSX.Element {
   });
 
   let routes = route_links.map((item) => (
-      <Route key={item.name} exact path={item.route} component={item.component}/>
+    <Route
+      key={item.name}
+      exact
+      path={item.route}
+      component={item.component}
+    />
   ));
 
   return (
-      <div className="App">
-        <BrowserRouter>
-          <HeaderBanner>
-            <div>
-              Meetings will resume in the 2020 fall semester
-            </div>
-          </HeaderBanner>
-          <NavBar
-            windowSize={windowSize}
-            links={navlinks}
-          />
-          {routes}
-        </BrowserRouter>
-      </div>
+    <div className="App">
+      <BrowserRouter>
+        <HeaderBanner>
+          <div>
+            Meetings will resume in the 2020 fall semester
+          </div>
+        </HeaderBanner>
+        <NavBar
+          windowSize={windowSize}
+          links={navlinks}
+        />
+        {routes}
+      </BrowserRouter>
+    </div>
   );
 
 }
