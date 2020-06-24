@@ -14,15 +14,15 @@ type NavListProps = {
 }
 
 type NavLinkProps = {
-  route: string,
   children: JSX.Element,
+  route: string,
 }
 
 type NavTogglerProps = {
+  children: JSX.Element,
   mobile: boolean,
   toggled: boolean,
   toggle: () => void,
-    children: JSX.Element,
 }
 
 export function NavBar(props: NavProps): JSX.Element {
