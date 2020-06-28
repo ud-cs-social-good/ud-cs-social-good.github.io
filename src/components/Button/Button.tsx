@@ -1,10 +1,10 @@
-import React  from 'react';
-import './Button.scss'
+import React from "react";
+import "./Button.scss";
 
 type ButtonProps = {
-  children: JSX.Element,
-  onClick: () => void,
-}
+  children: JSX.Element;
+  onClick: () => void;
+};
 
 export function Button(props: ButtonProps): JSX.Element {
   return (

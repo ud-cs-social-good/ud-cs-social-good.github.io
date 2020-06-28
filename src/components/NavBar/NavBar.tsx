@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import './NavBar.scss';
-import { Link, useLocation } from 'react-router-dom';
-import Logo from 'assets/images/cssg_logo_purple.svg';
+import React, { useState, useEffect } from "react";
+import "./NavBar.scss";
+import { Link, useLocation } from "react-router-dom";
+import Logo from "assets/images/cssg_logo_purple.svg";
 
 type NavProps = {
-  links: { name: string, route: string }[],
-  windowSize: { width: number, height: number },
-}
+  links: { name: string; route: string }[];
+  windowSize: { width: number; height: number };
+};
 
 type NavListProps = {
-  links: { name: string, route: string }[],
-  mobile: boolean,
-}
+  links: { name: string; route: string }[];
+  mobile: boolean;
+};
 
 type NavLinkProps = {
-  children: JSX.Element,
-  route: string,
-}
+  children: JSX.Element;
+  route: string;
+};
 
 type NavTogglerProps = {
-  children: JSX.Element,
-  mobile: boolean,
-  toggled: boolean,
-  toggle: () => void,
-}
+  children: JSX.Element;
+  mobile: boolean;
+  toggled: boolean;
+  toggle: () => void;
+};
 
 export function NavBar(props: NavProps): JSX.Element {
   let [toggled, setToggled] = useState(false);
@@ -42,13 +42,15 @@ export function NavBar(props: NavProps): JSX.Element {
 
   return (
     <nav>
-      <div className='navcontents'>
-        <NavLink route='/'>
-          <img className='navimage' src={Logo} alt='CS + Social Good Logo' />
+      <div className="navcontents">
+        <NavLink route="/">
+          <img className="navimage" src={Logo} alt="CS + Social Good Logo" />
         </NavLink>
         <NavToggler
           mobile={mobile}
-          toggle={() => { setToggled(!toggled) }}
+          toggle={() => {
+            setToggled(!toggled);
+          }}
           toggled={toggled}
         >
           <NavList mobile={mobile} links={props.links} />
@@ -61,25 +63,21 @@ export function NavBar(props: NavProps): JSX.Element {
 function NavLink(props: NavLinkProps): JSX.Element {
   return (
     <Link to={props.route}>
-      <button className='navlink'>
-        {props.children}
-      </button>
+      <button className="navlink">{props.children}</button>
     </Link>
-  )
+  );
 }
 
 function NavList(props: NavListProps): JSX.Element {
-  let links: JSX.Element[] = (props.links).map((link: any) => (
+  let links: JSX.Element[] = props.links.map((link: any) => (
     <li key={link.name}>
       <NavLink route={link.route}>{link.name}</NavLink>
     </li>
   ));
 
-  let style = props.mobile ? 'column' : 'row'
+  let style = props.mobile ? "column" : "row";
 
-  return (
-    <ul className={`navlist ${style}`}>{links}</ul>
-  );
+  return <ul className={`navlist ${style}`}>{links}</ul>;
 }
 
 function NavToggler(props: NavTogglerProps): JSX.Element {
@@ -101,16 +99,12 @@ function NavToggler(props: NavTogglerProps): JSX.Element {
   let contents = [];
 
   if (props.mobile) {
-    contents.push(hamburger_button)
+    contents.push(hamburger_button);
   }
 
   if (!props.mobile || props.toggled) {
-    contents.push(props.children)
+    contents.push(props.children);
   }
 
-  return (
-    <div className="navtoggler-container">
-      {contents}
-    </div>
-  );
+  return <div className="navtoggler-container">{contents}</div>;
 }

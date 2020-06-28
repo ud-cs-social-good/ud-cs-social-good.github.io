@@ -1,6 +1,6 @@
-import React  from 'react';
-import './About.scss';
-import { DenseCard } from 'components';
+import React from "react";
+import "./About.scss";
+import { DenseCard } from "components";
 
 export function About(): JSX.Element {
   return (
@@ -16,21 +16,19 @@ export function About(): JSX.Element {
               in ways that will help our community and promote technology as a
               means for positive social change
             </p>
-            <hr/>
+            <hr />
             <h2>Our Goals</h2>
             <ul>
               <li>
-                Connect students with technical projects that help promote social
-                good
+                Connect students with technical projects that help promote
+                social good
               </li>
               <li>
                 Discuss and address topics relating to technological ethics
               </li>
-              <li>
-                Help educated K-12 student on basic programing concepts
-              </li>
+              <li>Help educated K-12 student on basic programing concepts</li>
             </ul>
-            <hr/>
+            <hr />
             <h2>What We Do</h2>
             <ul>
               <li>
@@ -53,5 +51,5 @@ export function About(): JSX.Element {
         </DenseCard>
       </div>
     </div>
-  )
+  );
 }
