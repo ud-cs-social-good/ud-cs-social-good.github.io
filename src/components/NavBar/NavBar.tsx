@@ -41,10 +41,10 @@ export function NavBar(props: NavProps): JSX.Element {
   }, [location]);
 
   return (
-    <nav>
-      <div className="navcontents">
+    <nav className="NavBar">
+      <div className="NavContents">
         <NavLink route="/">
-          <img className="navimage" src={Logo} alt="CS + Social Good Logo" />
+          <img className="NavImage" src={Logo} alt="CS + Social Good Logo" />
         </NavLink>
         <NavToggler
           mobile={mobile}
@@ -63,7 +63,7 @@ export function NavBar(props: NavProps): JSX.Element {
 function NavLink(props: NavLinkProps): JSX.Element {
   return (
     <Link to={props.route}>
-      <button className="navlink">{props.children}</button>
+      <button className="NavLink">{props.children}</button>
     </Link>
   );
 }
@@ -75,9 +75,9 @@ function NavList(props: NavListProps): JSX.Element {
     </li>
   ));
 
-  let style = props.mobile ? "column" : "row";
+  let style = props.mobile ? "Column" : "Row";
 
-  return <ul className={`navlist ${style}`}>{links}</ul>;
+  return <ul className={`NavList ${style}`}>{links}</ul>;
 }
 
 function NavToggler(props: NavTogglerProps): JSX.Element {
@@ -86,7 +86,7 @@ function NavToggler(props: NavTogglerProps): JSX.Element {
       key="button"
       onClick={props.toggle}
       aria-label="menu"
-      className="navtoggler-button navlink"
+      className="NavTogglerButton NavLink"
     >
       <svg viewBox="0 0 100 80" width="20" height="20">
         <rect width="100" height="15"></rect>
@@ -106,5 +106,5 @@ function NavToggler(props: NavTogglerProps): JSX.Element {
     contents.push(props.children);
   }
 
-  return <div className="navtoggler-container">{contents}</div>;
+  return <div className="NavTogglerContainer">{contents}</div>;
 }
