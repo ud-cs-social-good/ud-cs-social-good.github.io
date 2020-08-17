@@ -1,6 +1,6 @@
 @import 'base.scss';
 
-nav {
+.NavBar {
   background-color: $bg;
   position:sticky;
   width:100%;
@@ -8,7 +8,7 @@ nav {
   z-index:1;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 
-  .navcontents {
+  .NavContents {
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
@@ -16,7 +16,7 @@ nav {
     justify-content: space-between;
     align-items:flex-start;
   }
-  .navlink {
+  .NavLink {
     cursor:pointer;
     height: $navheight;
     display:flex;
@@ -33,19 +33,19 @@ nav {
     text-decoration:none;
   }
 
-  .navlink:hover {
+  .NavLink:hover {
     background-color: $hover;
   }
 
-  .navlink:active {
+  .NavLink:active {
     background-color: $active;
   }
 
-  .navimage {
+  .NavImage {
     height: 2.5rem;
   }
 
-  .navlist {
+  .NavList {
     margin:0;
     padding:0;
     list-style-type: none;
@@ -53,21 +53,21 @@ nav {
     align-items:flex-end;
   }
 
-  .column {
+  .Column {
     flex-direction:column;
   }
 
-  .row {
+  .Row {
     flex-direction:row;
   }
 
-  .navtoggler-container {
+  .NavTogglerContainer {
     display:flex;
     flex-direction:column;
     align-items:flex-end;
   }
 
-  .navtoggler-button {
+  .NavTogglerButton {
     display:block;
   }
 }
