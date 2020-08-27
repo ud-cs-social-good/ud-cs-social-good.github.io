@@ -1,7 +1,3 @@
----
-permalink: /src/index.tsx
----
-
 This project houses the redesign of the CS + SG website using react.
 
 Check out the
