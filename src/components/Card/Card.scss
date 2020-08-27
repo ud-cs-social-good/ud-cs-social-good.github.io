@@ -11,10 +11,21 @@
   align-items: center;
   justify-content: center;
 
+  h1 {
+    color: $primary;
+    text-align:center;
+  }
+
   h2 {
     margin-top:0;
     padding-top:0;
     color: $primary;
+  }
+
+  h3 {
+    color: black;
+    text-align: center;
+    font-size: 150%;
   }
 
   ul {
@@ -57,7 +68,12 @@
 
 .Card img {
   width: 100%;
-  border-radius: 0.40rem;
+  border-radius: .4rem;
+}
+
+.Picture img{
+  width: 100%;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1000px) {

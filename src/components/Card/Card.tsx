@@ -10,6 +10,11 @@ type SplitCardProps = {
   right: JSX.Element;
 };
 
+type NameCardProps = {
+  picture: JSX.Element;
+  info: JSX.Element;
+}
+
 export function CenteredCard(props: CardProps): JSX.Element {
   return (
     <div className="Card">
@@ -34,3 +39,13 @@ export function SplitCard(props: SplitCardProps): JSX.Element {
     </div>
   );
 }
+
+export function NameCard(props: NameCardProps): JSX.Element {
+  return (
+    <div className="Card Split Name">
+      <div className="Picture Left">{props.picture}</div>
+      <div className="Right">{props.info}</div>
+    </div>
+  );
+}
+
