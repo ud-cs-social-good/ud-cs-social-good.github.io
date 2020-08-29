@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ud-cs-social-good.github.io/static/css/main.f9ccdd04.chunk.css",
+    "main.js": "/ud-cs-social-good.github.io/static/js/main.db9b8ac0.chunk.js",
+    "main.js.map": "/ud-cs-social-good.github.io/static/js/main.db9b8ac0.chunk.js.map",
+    "runtime-main.js": "/ud-cs-social-good.github.io/static/js/runtime-main.9cf0e6d0.js",
+    "runtime-main.js.map": "/ud-cs-social-good.github.io/static/js/runtime-main.9cf0e6d0.js.map",
+    "static/js/2.19c92d74.chunk.js": "/ud-cs-social-good.github.io/static/js/2.19c92d74.chunk.js",
+    "static/js/2.19c92d74.chunk.js.map": "/ud-cs-social-good.github.io/static/js/2.19c92d74.chunk.js.map",
+    "index.html": "/ud-cs-social-good.github.io/index.html",
+    "precache-manifest.4d01b2cd268326691d581c73fc36fcba.js": "/ud-cs-social-good.github.io/precache-manifest.4d01b2cd268326691d581c73fc36fcba.js",
+    "service-worker.js": "/ud-cs-social-good.github.io/service-worker.js",
+    "static/css/main.f9ccdd04.chunk.css.map": "/ud-cs-social-good.github.io/static/css/main.f9ccdd04.chunk.css.map",
+    "static/js/2.19c92d74.chunk.js.LICENSE.txt": "/ud-cs-social-good.github.io/static/js/2.19c92d74.chunk.js.LICENSE.txt",
+    "static/media/Events.scss": "/ud-cs-social-good.github.io/static/media/SourceSansPro-SemiBoldItalic.40000185.ttf",
+    "static/media/index.scss": "/ud-cs-social-good.github.io/static/media/background.03762bec.jpg",
+    "static/media/cssg_logo_purple.svg": "/ud-cs-social-good.github.io/static/media/cssg_logo_purple.e3aced0b.svg",
+    "static/media/diane.png": "/ud-cs-social-good.github.io/static/media/diane.938e3c3f.png",
+    "static/media/emily.jpg": "/ud-cs-social-good.github.io/static/media/emily.9b9ec1f3.jpg",
+    "static/media/lauren.jpg": "/ud-cs-social-good.github.io/static/media/lauren.54df313e.jpg",
+    "static/media/maria.png": "/ud-cs-social-good.github.io/static/media/maria.380de9cf.png",
+    "static/media/meeting.jpg": "/ud-cs-social-good.github.io/static/media/meeting.b242430a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9cf0e6d0.js",
+    "static/js/2.19c92d74.chunk.js",
+    "static/css/main.f9ccdd04.chunk.css",
+    "static/js/main.db9b8ac0.chunk.js"
+  ]
+}
