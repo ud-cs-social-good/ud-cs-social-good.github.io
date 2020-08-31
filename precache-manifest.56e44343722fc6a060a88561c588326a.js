@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d98a5bd2b751569c481c75689a76fba",
+    "revision": "a122c9444fba433a11966afb9fcfff35",
     "url": "/ud-cs-social-good.github.io/index.html"
   },
   {
-    "revision": "698639d8e76551987357",
-    "url": "/ud-cs-social-good.github.io/static/css/main.f9ccdd04.chunk.css"
+    "revision": "cfcdd3a8e5b3310c565d",
+    "url": "/ud-cs-social-good.github.io/static/css/main.b8636f3f.chunk.css"
   },
   {
-    "revision": "b3b27919f78285a002c1",
-    "url": "/ud-cs-social-good.github.io/static/js/2.19c92d74.chunk.js"
+    "revision": "feb9245f851aae52e94c",
+    "url": "/ud-cs-social-good.github.io/static/js/2.b07e0136.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/ud-cs-social-good.github.io/static/js/2.19c92d74.chunk.js.LICENSE.txt"
+    "url": "/ud-cs-social-good.github.io/static/js/2.b07e0136.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "698639d8e76551987357",
-    "url": "/ud-cs-social-good.github.io/static/js/main.db9b8ac0.chunk.js"
+    "revision": "cfcdd3a8e5b3310c565d",
+    "url": "/ud-cs-social-good.github.io/static/js/main.8d381e4d.chunk.js"
   },
   {
     "revision": "da80785fad98df0f559b",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9b9ec1f384814440a922e18ed1b30656",
     "url": "/ud-cs-social-good.github.io/static/media/emily.9b9ec1f3.jpg"
+  },
+  {
+    "revision": "b7d660e8c6ba1e208f94ef4f34273db6",
+    "url": "/ud-cs-social-good.github.io/static/media/gateway.b7d660e8.png"
   },
   {
     "revision": "54df313ec40f645ca407bd5bf438d01a",
