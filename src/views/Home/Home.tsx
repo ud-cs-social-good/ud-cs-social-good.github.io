@@ -18,11 +18,13 @@ export function Home(): JSX.Element {
               </br>Our interest sessions will be held from:
               <ul>
                 <li>1:15 - 1:30pm</li>
-                <li>2 - 2:15pm</li>
+                <li>2:00 - 2:15pm</li>
                 <li>2:40 - 2:55pm</li>
               </ul>
-              Location is TBD! (For sure online; we'll post a zoom link)
-            </div>
+              The meetings will be held over Zoom at the following link: <br></br>
+              <a href="https://udel.zoom.us/j/97000606334">https://udel.zoom.us/j/97000606334</a><br></br>
+              We hope to see you there!
+                          </div>
           }
         />
 
