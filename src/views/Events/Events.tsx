@@ -1,14 +1,30 @@
 import React from "react";
 import "./Events.scss";
-import GatewayImage from "assets/images/gateway.png";
 import LogoImage from "assets/images/cssg_logo_purple.svg";
+
+
 import { SplitCard, CenteredCard, DenseCard } from "components";
+import { updateNamespaceExportDeclaration } from "typescript";
 
 export function Events(): JSX.Element {
   return (
     <div className="View">
       <h1>Events</h1>
-      <div className="Cards">
+      <div id="Events" className="Cards">
+
+        <SplitCard
+          left={<img src={require('assets/images/udance.png')} alt="UDance App" />}
+          right={
+            <div> 
+              <h2>UDance App</h2>
+              <p>Our club has partnered with UDance to develop an app that will make it easier to locate and view the resources that UDance 
+                provides for it's partners. As a part of this app development, our club has been learning how to create apps for iOS and Android 
+                by using Google Flutter. <b>If you're interested in getting involved with this project, email President Maria van Venrooy at 
+                  mariavan@udel.edu</b>
+              </p>
+            </div>
+          }
+        />
       <SplitCard
         left={
           <div>
@@ -19,7 +35,7 @@ export function Events(): JSX.Element {
             </p>
           </div>}
           right={
-            <img src={GatewayImage} alt="Gateway" />
+            <img src={require('assets/images/gateway.png')} alt="Gateway" />
           }
         />
 
@@ -32,7 +48,7 @@ export function Events(): JSX.Element {
             </p>
           </div>}
           left={
-            <img src={LogoImage} alt="Gateway" />
+            <img src={require('assets/images/technica.png')} alt="Gateway" />
           }
         />
 
