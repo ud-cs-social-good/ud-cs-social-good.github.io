@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import { SplitCard, CenteredCard } from "components";
 import MeetingsImg from "assets/images/meeting.jpg";
+import TeaImg from "assets/images/teacup.png";
 
 export function Home(): JSX.Element {
   return (
@@ -9,24 +10,25 @@ export function Home(): JSX.Element {
       <h1>University of Delaware CS + Social Good</h1>
 
       <div className="Cards">
-      <SplitCard
+        <SplitCard
           left={<img src={MeetingsImg} alt="CS + Social Good Logo" />}
-          right={
+          right = {
             <div>
-              <h2>Interest Sessions 8/31</h2>
-              Join us at one of our three interest sessions on Monday, August 31st, 2020. We'll be talking more about what our club does and answering any questions you may have.<br>
-              </br>Our interest sessions will be held from:
-              <ul>
-                <li>1:15 - 1:30pm</li>
-                <li>2:00 - 2:15pm</li>
-                <li>2:40 - 2:55pm</li>
-              </ul>
-              The meetings will be held over Zoom at the following link: <br></br>
-              <a href="https://udel.zoom.us/j/97000606334">https://udel.zoom.us/j/97000606334</a><br></br>
-              We hope to see you there!
-                          </div>
+              <h2>General Body Meetings</h2>
+              Our general body meetings are hosted every other Tuesday from 7pm to 8pm. Meetings will resume again during the spring semester, so check back to find the dates!
+              </div>
           }
-        />
+          />
+
+          <SplitCard
+            left= {
+              <div>
+                <h2>Tea++ Meetings</h2>
+                Our Tea++ meetings are hosted every other Tuesday from 7pm to 8pm. Meetings will resume during winter session, so check back soon to find the dates for that! 
+              </div>  
+            }
+            right={<img src={TeaImg} alt="CS + Social Good Logo" />}
+          />
 
       </div>
     </div>

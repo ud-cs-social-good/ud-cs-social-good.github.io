@@ -32,7 +32,10 @@ export default function App(): JSX.Element {
     <div className="App">
       <BrowserRouter>
         <HeaderBanner>
-          <div>Meetings will resume in the 2020 fall semester</div>
+          <div>
+            Tea++ meetings will resume in the winter session <br></br>
+            General body meetings will resume in the spring semester
+          </div>
         </HeaderBanner>
         <NavBar windowSize={windowSize} links={nav_routes} />
         {routes}

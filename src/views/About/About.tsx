@@ -12,7 +12,7 @@ export function About(): JSX.Element {
           <div>
             <h2>Our Mission</h2>
             <p>
-              To foster interest in applying technical knowledge and experience
+              Our mission is to foster interest in applying technical knowledge and experience
               in ways that will help our community and promote technology as a
               means for positive social change
             </p>
@@ -31,6 +31,9 @@ export function About(): JSX.Element {
             <hr />
             <h2>What We Do</h2>
             <ul>
+              <li>
+                Work with other UD RSOs to develop websites and applications for their clubs (check out our work with UDance on our <a href="./events">events</a> page!)
+              </li>
               <li>
                 Assistant teach and plan curricula for local middle schools and
                 high schools good
