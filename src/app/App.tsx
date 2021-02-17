@@ -33,8 +33,8 @@ export default function App(): JSX.Element {
       <BrowserRouter>
         <HeaderBanner>
           <div>
-            Tea++ meetings will resume in the winter session <br></br>
-            General body meetings will resume in the spring semester
+          General body meetings every other Tuesday from 7-8pm <br></br>
+          Tea++ meetings on the off Tuesdays from 7-8pm             
           </div>
         </HeaderBanner>
         <NavBar windowSize={windowSize} links={nav_routes} />

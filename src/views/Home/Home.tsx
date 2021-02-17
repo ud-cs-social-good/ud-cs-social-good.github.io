@@ -15,8 +15,9 @@ export function Home(): JSX.Element {
           right = {
             <div>
               <h2>General Body Meetings</h2>
-              Our general body meetings are hosted every other Tuesday from 7pm to 8pm. Meetings will resume again during the spring semester, so check back to find the dates!
-              </div>
+              Our first general body meeting will be held <b>Tuesday, February 23rd, 2021</b> from <b>7-8pm</b>. Our regular general body meeting time may be subject
+              to change (depending on when members are available), so check back in later for any updates regarding meeting times. The link for our general body 
+              meetings is <a href="https://udel.zoom.us/j/6748152461" target="_blank" rel="noopener noreferrer">https://udel.zoom.us/j/6748152461</a></div>
           }
           />
 
@@ -24,7 +25,8 @@ export function Home(): JSX.Element {
             left= {
               <div>
                 <h2>Tea++ Meetings</h2>
-                Our Tea++ meetings are hosted every other Tuesday from 7pm to 8pm. Meetings will resume during winter session, so check back soon to find the dates for that! 
+                Our first Tea++ meeting of the semester will be held on <b>Tuesday, March 2nd, 2021</b> from <b>7-8pm</b> on <a href="https://udel.zoom.us/j/6748152461" target="_blank" rel="noopener noreferrer">https://udel.zoom.us/j/6748152461</a>
+                 . Our meeting dates may be subject to change based on our members' availability, so check back in for more info regarding meeting times!
               </div>  
             }
             right={<img src={TeaImg} alt="CS + Social Good Logo" />}
