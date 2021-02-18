@@ -104,3 +104,24 @@
     }
   }
 }
+
+.Social {
+  text-align: center;
+  display: flex;
+}
+
+.Social p{
+  flex: 1;
+  font-size: x-large;
+  padding: 0em 2em;
+}
+
+.Social img{
+  flex: 1;
+  height: 6em;
+  width: 6em;
+}
+
+.Social div {
+  display: inline-block;
+}

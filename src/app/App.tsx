@@ -2,14 +2,15 @@ import React from "react";
 import "./App.scss";
 import { BrowserRouter, Route } from "react-router-dom";
 import { NavBar, HeaderBanner } from "components";
-import { Home, About, Volunteering, Team, Events } from "views";
+import { Home, About, Volunteering, Team, Events, Connect } from "views";
 import { useWindowSize } from "hooks";
 
 const nav_routes = [
   { name: "About", route: "/about", component: About },
   { name: "Events", route: "/events", component: Events },
   { name: "Team", route: "/team", component: Team },
-  { name: "Volunteering", route: "/volunteering", component: Volunteering }
+  { name: "Volunteering", route: "/volunteering", component: Volunteering },
+  { name: "Connect", route: "/connect", component: Connect }
 ];
 
 const other_routes = [{ name: "Home", route: "/", component: Home }];

@@ -31,6 +31,14 @@ export function DenseCard(props: CardProps): JSX.Element {
   );
 }
 
+export function SocialCard(props: CardProps): JSX.Element {
+  return (
+    <div className="Card Social">
+      <div className="Dense Social">{props.children}</div>
+    </div>
+  );
+}
+
 export function SplitCard(props: SplitCardProps): JSX.Element {
   return (
     <div className="Card Split">

@@ -3,3 +3,4 @@ export { About } from "./About/About";
 export { Volunteering } from "./Volunteering/Volunteering";
 export { Team } from "./Team/Team";
 export { Events } from "./Events/Events";
+export { Connect } from "./Connect/Connect";
