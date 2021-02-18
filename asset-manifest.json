@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ud-cs-social-good.github.io/static/css/main.f255cd98.chunk.css",
-    "main.js": "/ud-cs-social-good.github.io/static/js/main.eb041e0f.chunk.js",
-    "main.js.map": "/ud-cs-social-good.github.io/static/js/main.eb041e0f.chunk.js.map",
-    "runtime-main.js": "/ud-cs-social-good.github.io/static/js/runtime-main.9cf0e6d0.js",
-    "runtime-main.js.map": "/ud-cs-social-good.github.io/static/js/runtime-main.9cf0e6d0.js.map",
-    "static/js/2.b07e0136.chunk.js": "/ud-cs-social-good.github.io/static/js/2.b07e0136.chunk.js",
-    "static/js/2.b07e0136.chunk.js.map": "/ud-cs-social-good.github.io/static/js/2.b07e0136.chunk.js.map",
+    "main.css": "/ud-cs-social-good.github.io/static/css/main.770869e5.chunk.css",
+    "main.js": "/ud-cs-social-good.github.io/static/js/main.640768f2.chunk.js",
+    "main.js.map": "/ud-cs-social-good.github.io/static/js/main.640768f2.chunk.js.map",
+    "runtime-main.js": "/ud-cs-social-good.github.io/static/js/runtime-main.80d45a99.js",
+    "runtime-main.js.map": "/ud-cs-social-good.github.io/static/js/runtime-main.80d45a99.js.map",
+    "static/js/2.2ce37a77.chunk.js": "/ud-cs-social-good.github.io/static/js/2.2ce37a77.chunk.js",
+    "static/js/2.2ce37a77.chunk.js.map": "/ud-cs-social-good.github.io/static/js/2.2ce37a77.chunk.js.map",
     "index.html": "/ud-cs-social-good.github.io/index.html",
-    "precache-manifest.f79329518b6320a46cc2fcd140f9ed7a.js": "/ud-cs-social-good.github.io/precache-manifest.f79329518b6320a46cc2fcd140f9ed7a.js",
+    "precache-manifest.e8d7da2c3de57a9685144ec56399523a.js": "/ud-cs-social-good.github.io/precache-manifest.e8d7da2c3de57a9685144ec56399523a.js",
     "service-worker.js": "/ud-cs-social-good.github.io/service-worker.js",
-    "static/css/main.f255cd98.chunk.css.map": "/ud-cs-social-good.github.io/static/css/main.f255cd98.chunk.css.map",
-    "static/js/2.b07e0136.chunk.js.LICENSE.txt": "/ud-cs-social-good.github.io/static/js/2.b07e0136.chunk.js.LICENSE.txt",
-    "static/media/Events.scss": "/ud-cs-social-good.github.io/static/media/SourceSansPro-SemiBoldItalic.40000185.ttf",
+    "static/css/main.770869e5.chunk.css.map": "/ud-cs-social-good.github.io/static/css/main.770869e5.chunk.css.map",
+    "static/js/2.2ce37a77.chunk.js.LICENSE.txt": "/ud-cs-social-good.github.io/static/js/2.2ce37a77.chunk.js.LICENSE.txt",
+    "static/media/Connect.scss": "/ud-cs-social-good.github.io/static/media/SourceSansPro-SemiBoldItalic.40000185.ttf",
     "static/media/index.scss": "/ud-cs-social-good.github.io/static/media/background.03762bec.jpg",
     "static/media/cssg_logo_purple.svg": "/ud-cs-social-good.github.io/static/media/cssg_logo_purple.e3aced0b.svg",
     "static/media/diane.png": "/ud-cs-social-good.github.io/static/media/diane.938e3c3f.png",
@@ -26,9 +26,9 @@
     "static/media/udance.png": "/ud-cs-social-good.github.io/static/media/udance.d050c3ad.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9cf0e6d0.js",
-    "static/js/2.b07e0136.chunk.js",
-    "static/css/main.f255cd98.chunk.css",
-    "static/js/main.eb041e0f.chunk.js"
+    "static/js/runtime-main.80d45a99.js",
+    "static/js/2.2ce37a77.chunk.js",
+    "static/css/main.770869e5.chunk.css",
+    "static/js/main.640768f2.chunk.js"
   ]
 }
