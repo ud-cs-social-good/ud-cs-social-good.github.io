@@ -34,8 +34,8 @@ export default function App(): JSX.Element {
       <BrowserRouter>
         <HeaderBanner>
           <div>
-          General body meetings every other Tuesday from 7-8pm <br></br>
-          Tea++ meetings on the off Tuesdays from 7-8pm             
+          General body meetings every other Wednesday from 6-7pm <br></br>
+          Tea++ meetings on the off Wednesdays from 6-7pm             
           </div>
         </HeaderBanner>
         <NavBar windowSize={windowSize} links={nav_routes} />
