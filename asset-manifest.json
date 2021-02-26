@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ud-cs-social-good.github.io/static/css/main.770869e5.chunk.css",
-    "main.js": "/ud-cs-social-good.github.io/static/js/main.640768f2.chunk.js",
-    "main.js.map": "/ud-cs-social-good.github.io/static/js/main.640768f2.chunk.js.map",
+    "main.js": "/ud-cs-social-good.github.io/static/js/main.b5347cb7.chunk.js",
+    "main.js.map": "/ud-cs-social-good.github.io/static/js/main.b5347cb7.chunk.js.map",
     "runtime-main.js": "/ud-cs-social-good.github.io/static/js/runtime-main.80d45a99.js",
     "runtime-main.js.map": "/ud-cs-social-good.github.io/static/js/runtime-main.80d45a99.js.map",
     "static/js/2.2ce37a77.chunk.js": "/ud-cs-social-good.github.io/static/js/2.2ce37a77.chunk.js",
     "static/js/2.2ce37a77.chunk.js.map": "/ud-cs-social-good.github.io/static/js/2.2ce37a77.chunk.js.map",
     "index.html": "/ud-cs-social-good.github.io/index.html",
-    "precache-manifest.e8d7da2c3de57a9685144ec56399523a.js": "/ud-cs-social-good.github.io/precache-manifest.e8d7da2c3de57a9685144ec56399523a.js",
+    "precache-manifest.30b101d0bf2091580dfef49740384000.js": "/ud-cs-social-good.github.io/precache-manifest.30b101d0bf2091580dfef49740384000.js",
     "service-worker.js": "/ud-cs-social-good.github.io/service-worker.js",
     "static/css/main.770869e5.chunk.css.map": "/ud-cs-social-good.github.io/static/css/main.770869e5.chunk.css.map",
     "static/js/2.2ce37a77.chunk.js.LICENSE.txt": "/ud-cs-social-good.github.io/static/js/2.2ce37a77.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.80d45a99.js",
     "static/js/2.2ce37a77.chunk.js",
     "static/css/main.770869e5.chunk.css",
-    "static/js/main.640768f2.chunk.js"
+    "static/js/main.b5347cb7.chunk.js"
   ]
 }
